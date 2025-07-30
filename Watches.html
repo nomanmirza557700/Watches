@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elite Timepieces | Watch Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #000;
+      padding: 15px 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #ffd700;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('hero.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    /* Watch Grid */
+    .watch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .watch-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .watch-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .watch-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .watch-info {
+      padding: 20px;
+    }
+
+    .watch-info h3 {
+      margin: 0 0 10px;
+      color: #000;
+    }
+
+    .watch-info p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #0077cc;
+      font-size: 18px;
+    }
+
+    /* Buy Button */
+    form {
+      margin-top: 15px;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="brand-name">Elite TimePieces</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Watches.html">Watches</a></li>
+        <li><a href="index.html#hero">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    Timeless Elegance, Redefined
+  </div>
+
+  <div class="watch-grid">
+
+    <div class="watch-card">
+      <img src="https://www.thegiftexperience.co.uk/cms_media/images/mens_modern_vintage_personalised_leather_watch_in_black_per2806_ser.jpg" alt="Classic Leather Watch">
+      <div class="watch-info">
+        <h3>Classic Leather</h3>
+        <p>Timeless brown leather strap and black dial — the definition of elegance.</p>
+        <div class="price">$199.99</div>
+        <form action="payment.html" method="get">
+          <input type="hidden" name="item" value="Classic Leather">
+          <input type="hidden" name="price" value="199.99">
+          <button type="submit">Buy Now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="watch-card">
+      <img src="https://currenwatches.com.pk/cdn/shop/products/83845_1445x.jpg" alt="Modern Steel Watch">
+      <div class="watch-info">
+        <h3>Modern Steel</h3>
+        <p>Premium polished stainless steel with a minimalist face.</p>
+        <div class="price">$249.99</div>
+        <form action="payment.html" method="get">
+          <input type="hidden" name="item" value="Modern Steel">
+          <input type="hidden" name="price" value="249.99">
+          <button type="submit">Buy Now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="watch-card">
+      <img src="https://globalboutique.com/wp-content/uploads/2023/05/inline-gold-watches-3.jpg" alt="Luxury Gold Watch">
+      <div class="watch-info">
+        <h3>Luxury Gold</h3>
+        <p>Luxurious golden casing for bold and confident individuals.</p>
+        <div class="price">$349.99</div>
+        <form action="payment.html" method="get">
+          <input type="hidden" name="item" value="Luxury Gold">
+          <input type="hidden" name="price" value="349.99">
+          <button type="submit">Buy Now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="watch-card">
+      <img src="https://www.rosegoldandblack.com/cdn/shop/files/Minimal-Black-Watch-Front-Face.jpg?v=1685677472" alt="Minimal Black Watch">
+      <div class="watch-info">
+        <h3>Minimal Black</h3>
+        <p>All-black design built for those who prefer subtle sophistication.</p>
+        <div class="price">$159.99</div>
+        <form action="payment.html" method="get">
+          <input type="hidden" name="item" value="Minimal Black">
+          <input type="hidden" name="price" value="159.99">
+          <button type="submit">Buy Now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="watch-card">
+      <img src="https://asavir.pk/wp-content/uploads/2024/10/2312.png" alt="Elegant Blue Watch">
+      <div class="watch-info">
+        <h3>Elegant Blue</h3>
+        <p>Royal blue dial with silver strap. A truly unique look.</p>
+        <div class="price">$209.99</div>
+        <form action="payment.html" method="get">
+          <input type="hidden" name="item" value="Elegant Blue">
+          <input type="hidden" name="price" value="209.99">
+          <button type="submit">Buy Now</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Elite Timepieces. All rights reserved.
+  </footer>
+
+</body>
+</html>
